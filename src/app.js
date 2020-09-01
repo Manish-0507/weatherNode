@@ -9,7 +9,7 @@ const hbs = require('hbs');//load hbs.
 // console.log(__dirname)
 console.log(path.join(__dirname, '../public'))//we join the path to that folder in which our index.html is present and bcoz we want to load that when it starts
 
-const app = express();
+const app = express()
 
 
 //define paths for express config
