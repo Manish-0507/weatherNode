@@ -9,7 +9,8 @@ const hbs = require('hbs');//load hbs.
 // console.log(__dirname)
 console.log(path.join(__dirname, '../public'))//we join the path to that folder in which our index.html is present and bcoz we want to load that when it starts
 
-const app = express()
+const app = express();
+const port = process.env.PORT || 3000//access the port provided by heroku 'env' stands for environmentvariable.for loalhost its 3000 and otherwise it willuse heroku server.
 
 
 //define paths for express config
@@ -133,6 +134,6 @@ app.get('*', (req, res) => {//'*' says everything is a match means if not found 
 
 })
 
-app.listen(3000, () => {
-    console.log('server is up on port 3000.')
+app.listen(port, () => {
+    console.log('server is up on port .' + port);
 });
