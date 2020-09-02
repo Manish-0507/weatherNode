@@ -8,7 +8,9 @@ const foreCast = (long, lat, callback) => {
         } else if (body.error) {
             callback('unable to find location.try another one!!', undefined);
         } else {
-            callback('', body.current.weather_descriptions[0] + ' the current temperature is ' + body.current.temperature + ' and the chances of rain is ' + body.current.precip)
+
+            callback('', body.current.weather_descriptions[0] + ' the current temperature is ' + body.current.temperature + ' and the chances of rain is ' + body.current.precip + 'the humidity level is:' + body.current.humidity);
+
         }
     })
 }

@@ -1,2 +1,0 @@
-//contains file which git has to ignore from the directory we selected.we ignored node modules file becoz we can generate it anywhere by npm install which will be created by package .json and package lock.json.
-node_modules/
